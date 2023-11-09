@@ -1,13 +1,20 @@
 import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
-import { userRouter } from "./routes/user.js";
-import { recipesRouter } from "./routes/recipes.js";
+import { userRouter } from "./src/routes/user.js";
+import { recipesRouter } from "./src/routes/recipes.js";
 
 const app = express();
 
 app.use(express.json());
-app.use(cors);
+
+  app.use(
+    cors({
+      origin: "https://portfolio-psi-seven-50.vercel.app",
+      methods: "POST,GET",
+      credentials: true
+    })
+  );
 
 app.use("/auth", userRouter);
 app.use("/recipes", recipesRouter);
