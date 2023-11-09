@@ -13,7 +13,7 @@ app.use("/auth", userRouter);
 app.use("/recipes", recipesRouter);
 
 mongoose.connect(
-  "mongodb://0.0.0.0:27017/recipe",
+  "mongodb+srv://admin:admin@chancluster.qrpx1av.mongodb.net/recipe",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
