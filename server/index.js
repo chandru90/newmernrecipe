@@ -8,13 +8,13 @@ const app = express();
 
 app.use(express.json());
 
-/*  app.use(
+  app.use(
     cors({
       origin: "https://newmernrecipe.vercel.app",
       methods: "POST,GET",
       credentials: true
     })
-  );*/
+  );
 
 app.use("/auth", userRouter);
 app.use("/recipes", recipesRouter);
