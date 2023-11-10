@@ -10,7 +10,7 @@ app.use(express.json());
 
   app.use(
     cors({
-      origin: "https://newmernrecipe.vercel.app/",
+      origin: "https://newmernrecipe.vercel.app",
       methods: "POST,GET",
       credentials: true
     })
