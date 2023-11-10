@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "type": "module",
-  "proxy":"https://serve-1sxs.onrender.com",
+
 
   "scripts": {
     "start": "nodemon index.js"
