@@ -16,8 +16,8 @@ app.use(express.json());
     })
   );
 
-app.use("/auth", userRouter);
-app.use("/recipes", recipesRouter);
+app.use("https://serve-1sxs.onrender.com/auth", userRouter);
+app.use("https://serve-1sxs.onrender.com/recipes", recipesRouter);
 
 mongoose.connect(
   "mongodb+srv://admin:admin@chancluster.qrpx1av.mongodb.net/recipe",
